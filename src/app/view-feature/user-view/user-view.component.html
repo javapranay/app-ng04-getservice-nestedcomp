@@ -1,0 +1,22 @@
+User Name: <input type="text" [(ngModel)]="userName">
+<button (click)="search()">Search</button>
+<div *ngIf="userResponseData">
+    <dl>
+        <dt>Login Name:</dt>
+        <dd>{{userResponseData.login}}</dd>
+        <dt>Number Of Repos:</dt>
+        <dd>{{userResponseData.public_repos}}</dd>
+        <dt>Number Of Followers:</dt>
+        <dd>{{userResponseData.followers}}</dd>
+        <dt>Number Of Gists:</dt>
+        <dd>{{userResponseData.public_gists}}</dd>
+        <dt>Creation Date:</dt>
+        <dd>{{userResponseData.created_at}}</dd>
+        <dt>Company Name:</dt>
+        <dd>{{userResponseData.company}}</dd>
+        <dt>Location:</dt>
+        <dd>{{userResponseData.location}}</dd>
+        <dt>Email Id:</dt>
+        <dd>{{userResponseData.email}}</dd>
+    </dl>
+</div>
