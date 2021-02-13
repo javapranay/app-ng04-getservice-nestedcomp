@@ -4,15 +4,17 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ViewFeatureModule } from './view-feature/view-feature.module';
+import { IconDashboardModule } from './icon-dashboard/icon-dashboard.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     ViewFeatureModule,
+    IconDashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

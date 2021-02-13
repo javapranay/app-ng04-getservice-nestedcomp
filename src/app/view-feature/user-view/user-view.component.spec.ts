@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import {HttpClientTestingModule,HttpTestingController} from '@angular/common/http/testing';
 import { UserViewComponent } from './user-view.component';
 
 describe('UserViewComponent', () => {
@@ -8,7 +8,8 @@ describe('UserViewComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UserViewComponent ]
+      declarations: [ UserViewComponent ],
+      imports: [HttpClientTestingModule]
     })
     .compileComponents();
   });
@@ -19,7 +20,7 @@ describe('UserViewComponent', () => {
     fixture.detectChanges();
   });
 
-  xit('should create', () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });

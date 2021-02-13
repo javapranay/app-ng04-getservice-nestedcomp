@@ -1,0 +1,13 @@
+<div align="center" *ngFor="let icon of icons">
+    <h3>{{icon.iconName}}</h3>
+    <img [src] = "icon.path" border="1" width="200" height="200"><br>
+    {{icon.likes}}(likes) | {{icon.dislikes}}(dislikes)
+
+    <a href = "#">
+        <img scr="assets/images/like.jpg" width="30" height="30" (click)="likesCounter(icon)">
+    </a>
+    <span> | </span>
+    <a href = "#">
+        <img scr="assets/images/dislike.jpg" width="30" height="30" (click)="dislikesCounter(icon)">
+    </a>
+</div>
